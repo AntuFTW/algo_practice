@@ -81,6 +81,7 @@ def quick_sort(array, start, end):
 
     quick_sort(array, start, i)  # left side sort
     quick_sort(array, i + 2, end)  # right side sort
+    # its at i + 2 because at i + 1 is the pivot so i + 2 is where new array starts
 
 
 if __name__ == '__main__':
