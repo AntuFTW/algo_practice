@@ -1,4 +1,4 @@
-import numpy as np
+from numpy import random
 
 
 '''
@@ -85,8 +85,8 @@ def quick_sort(array, start, end):
 
 
 if __name__ == '__main__':
-    # array = [random.randint(10000) for i in range(10000)]
-    array = [3, 2, 5, 11, 4, 6, 3, 2, 1, 5]
+    array = [random.randint(10000) for i in range(10000)]
+    # array = [3, 2, 5, 11, 4, 6, 3, 2, 1, 5]
     # input for end is index as in range this will be limit and j does not need to hit the end of array as thats where pivot is
     quick_sort(array, 0, len(array) - 1)
     # array = [5, 2, 8, 6, 1]
